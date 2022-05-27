@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum Team
     {
-        
+        Player,
+        Enemy 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Header("Stats")]
+    public Team team;
+    public string displayName;
+    public int curHp;
+    public int maxHp;
+
+    [Header("Conpoments")]
+    public CharacterEffect characterEffect;
+    public CharacterUI characterUI;
+    public GameObject selectorVisual;
+    public DamageFlash damageFlash;
+
+    [Header("Prefabs")]
+    public GameObject HealParticlePrefab;
+
+    private Vector3 standingPosition;
+    
+
+
+
 }
