@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]  
 public class PlayerPresistentCharacter
 {
-    public GameObject characterPrefabs;
+    public GameObject characterPrefab;
     public int health;
     public bool isDead;
 
