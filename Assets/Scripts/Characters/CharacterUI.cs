@@ -10,7 +10,7 @@ public class CharacterUI : MonoBehaviour
     public Image healthFill;
     public TextMeshProUGUI healthText;
     public Image turnVisual;
-
+    
     void Update()
     {
         transform.forward = transform.position - Camera.main.transform.position;
