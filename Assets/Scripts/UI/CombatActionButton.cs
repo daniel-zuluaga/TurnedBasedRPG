@@ -1,18 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CombatActionButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TextMeshProUGUI nameText;
+
+    private CombatAction combatAction;
+    private CombatActionUI ui;
+
+    private void Awake()
     {
-        
+        ui = FindObjectOfType<CombatActionUI>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetCombatAction(CombatAction combat)
     {
-        
+        combatAction = combat;
+        nameText.text = combat.displayName;
     }
+
+    public void OnClick()
+    {
+
+    }
+
+    public void OnHoverEnter()
+    {
+        ui.SetCombatActionDescription(combatAction);
+    }
+
+    public void OnHoverExit()
+    {
+        ui.DisableCombatActionDescription();
+    }
+
 }

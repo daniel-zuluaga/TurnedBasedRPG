@@ -16,7 +16,10 @@ public class Character : MonoBehaviour
     public int curHp;
     public int maxHp;
 
-    [Header("Conpoments")]
+    [Header("Combat Actions")]
+    public CombatAction[] combatActions;
+
+    [Header("Components")]
     public CharacterEffect characterEffect;
     public CharacterUI characterUI;
     public GameObject selectorVisual;
