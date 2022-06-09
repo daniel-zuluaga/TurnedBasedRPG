@@ -19,6 +19,26 @@ PrefabInstance:
       propertyPath: displayName
       value: Juliana
       objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e16b0544b184b41078b569bd3b817ca8, type: 2}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 071514c5862214b2a9818b663e6f46cb, type: 2}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 34da08e279fed46f8b38747cb3be375a, type: 2}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: e9deb86b661be4b3aa43adb37181443e, type: 2}
     - target: {fileID: 2875448042572409688, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b599d971a30b4deab02c72893739f8e, type: 3}
-  m_Name: Player_1
+  m_Name: Player0_Slash
   m_EditorClassIdentifier: 
   displayName: Slash
-  description: Deals 5 damage to an enemy
-  meleeDamage: 5
+  description: Deals 8 damage to an enemy
+  meleeDamage: 8
