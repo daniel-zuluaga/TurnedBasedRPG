@@ -48,14 +48,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc205d703e1a4919b35bfb5086a84f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  team: 1
+  team: 0
   displayName: Character
   curHp: 25
   maxHp: 25
   combatActions: []
   characterEffect: {fileID: 2875448042572409670}
   characterUI: {fileID: 2875448043575034381}
-  selectorVisual: {fileID: 2875448042718265301}
+  selectorVisual: {fileID: 2875448044249249404}
   damageFlash: {fileID: 4111684046234599729}
   HealParticlePrefab: {fileID: 0}
 --- !u!114 &2875448042572409670
