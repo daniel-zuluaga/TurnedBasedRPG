@@ -63,27 +63,23 @@ public class TurnManager : MonoBehaviour
     {
         curTurnOrderIndex++;
 
-        if(curTurnOrderIndex == turnOrder.Count)
-        {
+        if (curTurnOrderIndex == turnOrder.Count)
             curTurnOrderIndex = 0;
-        }
 
-        while(turnOrder[curTurnOrderIndex]== null)
+        while (turnOrder[curTurnOrderIndex] == null)
         {
             curTurnOrderIndex++;
 
             if (curTurnOrderIndex == turnOrder.Count)
-            {
                 curTurnOrderIndex = 0;
-            }
         }
 
-        NewTurn(turnOrder[curTurnOrderIndex]); 
+        NewTurn(turnOrder[curTurnOrderIndex]);
     }
 
     public Character GetCurrentTurnCharacter()
     {
-        return curTurnCharacter; 
+        return curTurnCharacter;
     }
 
 }

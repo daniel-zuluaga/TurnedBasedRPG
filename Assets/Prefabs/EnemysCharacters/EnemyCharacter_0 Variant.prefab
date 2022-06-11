@@ -8,18 +8,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
-      propertyPath: team
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
-      propertyPath: curHp
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
-      propertyPath: maxHp
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: displayName
       value: Mariana
       objectReference: {fileID: 0}

@@ -8,6 +8,6 @@ public class MeleeCombatAction : CombatAction
     public int meleeDamage;
     public override void Cast(Character caster, Character target)
     {
-        throw new System.NotImplementedException();
+
     }
 }
