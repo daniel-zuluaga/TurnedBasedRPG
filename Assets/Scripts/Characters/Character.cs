@@ -83,7 +83,7 @@ public class Character : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        Destroy(gameObject); 
     }
 
     public void MoveToTarget(Character target, UnityAction<Character> arriveCallBacks)
