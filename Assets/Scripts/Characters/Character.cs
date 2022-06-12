@@ -32,15 +32,22 @@ public class Character : MonoBehaviour
 
     private Vector3 standingPosition;
 
-    private void OnEnable()
+    void OnEnable()
     {
         TurnManager.instance.onNewTurn += OnNewTurn;
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
         TurnManager.instance.onNewTurn -= OnNewTurn;
 
+    }
+
+    void Start()
+    {
+        standingPosition = transform.position;
+        characterUI.SetCharacterNameText(displayName);
+        characterUI.UpdateHealthBar(curHp, maxHp);
     }
 
     void OnNewTurn()
@@ -50,12 +57,23 @@ public class Character : MonoBehaviour
 
     public void CastCombatAction(CombatAction combatAction, Character target = null)
     {
+        if (target == null)
+            target = this;
+
+        combatAction.Cast(this, target);
 
     }
 
     public void TakeDamage(int damage)
     {
+        curHp -= damage;
 
+        characterUI.UpdateHealthBar(curHp, maxHp);
+
+        if (curHp <= 0)
+        {
+            Die();
+        }
     }
 
     public void Heal(int amount)
@@ -65,12 +83,29 @@ public class Character : MonoBehaviour
 
     void Die()
     {
-
+        Destroy(gameObject);
     }
 
     public void MoveToTarget(Character target, UnityAction<Character> arriveCallBacks)
     {
+        StartCoroutine(MeleeAttackAnimation());
 
+        IEnumerator MeleeAttackAnimation()
+        {
+            while (transform.position != target.transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 10 * Time.deltaTime);
+                yield return null;
+            }
+
+            arriveCallBacks?.Invoke(target);
+
+            while (transform.position != standingPosition)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, standingPosition, 10 * Time.deltaTime);
+                yield return null;
+            }
+        }
     }
 
     public void ToggleSelectionVisual(bool toggle)
