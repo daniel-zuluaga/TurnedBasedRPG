@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player1_Samash
   m_EditorClassIdentifier: 
   displayName: Smash
-  description: A rock crushes him, dealing 18 damage
+  description: 'A rock crushes him, dealing 18 damage and stuns him for 1 turn '
   projectilePrefab: {fileID: 0}

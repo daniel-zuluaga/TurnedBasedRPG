@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Effect Combat Action", menuName = "CombatActions/Effect Combat Action")]
 public class EffectCombatAction : CombatAction
 { 
-    // public Effects effectToCast;
+    public Effect effectToCast;
     public bool canEffectSelf;
     public bool canEffectTeam;
     public bool canEffectEnemy;
@@ -13,6 +13,6 @@ public class EffectCombatAction : CombatAction
 
     public override void Cast(Character caster, Character target)
     {
-        throw new System.NotImplementedException();
+        target.characterEffect.AddNewEffects(effectToCast);
     }
 }

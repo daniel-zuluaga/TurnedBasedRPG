@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
 {
     public int damage;
     public int heal;
-    //public Effect effectToApply;
+    public Effect effectToApply;
 
     public float moveSpeed;
 
@@ -37,7 +37,10 @@ public class Projectile : MonoBehaviour
             target.Heal(heal);
         }
 
-        //apply effect if we have one
+        if(effectToApply != null)
+        {
+            target.GetComponent<CharacterEffect>().AddNewEffects(effectToApply);
+        }
 
     }
 
