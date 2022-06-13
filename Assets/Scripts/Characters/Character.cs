@@ -79,6 +79,15 @@ public class Character : MonoBehaviour
 
     public void Heal(int amount)
     {
+        curHp += amount;
+
+        if(curHp > maxHp)
+        {
+            curHp = maxHp;
+        }
+
+        characterUI.UpdateHealthBar(curHp, maxHp);
+        Instantiate(HealParticlePrefab, transform);
 
     }
 
