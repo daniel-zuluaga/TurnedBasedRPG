@@ -57,7 +57,7 @@ MonoBehaviour:
   characterUI: {fileID: 2875448043575034381}
   selectorVisual: {fileID: 2875448044249249404}
   damageFlash: {fileID: 4111684046234599729}
-  HealParticlePrefab: {fileID: 0}
+  HealParticlePrefab: {fileID: 4875841231991458675, guid: c46735582d8c64e55ad68c81d9a3295e, type: 3}
 --- !u!114 &2875448042572409670
 MonoBehaviour:
   m_ObjectHideFlags: 0
