@@ -3076,6 +3076,7 @@ GameObject:
   - component: {fileID: 1425767781}
   - component: {fileID: 1425767783}
   - component: {fileID: 1425767784}
+  - component: {fileID: 1425767785}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -3151,6 +3152,45 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   combatActionUI: {fileID: 987559348}
+--- !u!114 &1425767785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425767780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2195eff8575b54caaba491acc90359ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minWaitTime: 0.2
+  maxWaitTime: 1
+  attackWeakestChance: 0.7
+  healChanceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.9268799
+      inSlope: -3.189242
+      outSlope: -3.189242
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.04191617
+    - serializedVersion: 3
+      time: 0.7002777
+      value: 0.003805725
+      inSlope: -0.082514256
+      outSlope: -0.082514256
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.15570612
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1544998924
 PrefabInstance:
   m_ObjectHideFlags: 0

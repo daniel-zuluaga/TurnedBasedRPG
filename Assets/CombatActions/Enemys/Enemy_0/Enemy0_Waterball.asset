@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08c3e0392a744c5c93aba40109a297d, type: 3}
+  m_Name: Enemy0_Waterball
+  m_EditorClassIdentifier: 
+  displayName: Waterball
+  description: 
+  projectilePrefab: {fileID: 894067007101920682, guid: 2692fa96d681e4a73935f86a99383956, type: 3}

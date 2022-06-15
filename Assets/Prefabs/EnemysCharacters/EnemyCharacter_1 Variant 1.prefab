@@ -23,6 +23,22 @@ PrefabInstance:
       propertyPath: displayName
       value: Robot
       objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a8f73f10bc9e4e33a9484485e673474, type: 2}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3ae454f618bd54b5a8c2a1e04e5dd153, type: 2}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d242165906034cde88251ba20464b66, type: 2}
     - target: {fileID: 2875448042572409688, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_RootOrder
       value: 0
