@@ -4853,7 +4853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de909d9705eea450cb73baf11dcb47b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
+  damage: 3
   heal: 0
   effectToApply: {fileID: 11400000, guid: 289bbb20af5834c1c8596bafae4dd287, type: 2}
   moveSpeed: 5
