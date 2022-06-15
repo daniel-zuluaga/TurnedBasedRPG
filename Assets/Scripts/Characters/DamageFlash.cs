@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class DamageFlash : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Renderer[] render;
+
     void Start()
     {
-        
+        render = GetComponentsInChildren<Renderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Flash()
     {
-        
+        StartCoroutine(FlashCoroutine());
+
+        IEnumerator FlashCoroutine()
+        {
+            SetMREmision(Color.red);
+
+            yield return new WaitForSeconds(0.5f);
+
+            SetMREmision(Color.black);
+        }
     }
+
+    void SetMREmision(Color color)
+    {
+        for(int i = 0; i < render.Length; i++)
+        {
+            render[i].material.SetColor("_EmissionColor", color);
+        }
+    }
+
 }

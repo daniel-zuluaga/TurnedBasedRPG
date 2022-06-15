@@ -71,6 +71,8 @@ public class Character : MonoBehaviour
 
         characterUI.UpdateHealthBar(curHp, maxHp);
 
+        damageFlash.Flash();
+
         if (curHp <= 0)
         {
             Die();
@@ -97,8 +99,13 @@ public class Character : MonoBehaviour
     }
 
     public void MoveToTarget(Character target, UnityAction<Character> arriveCallBacks)
-    {
+    { 
         StartCoroutine(MeleeAttackAnimation());
+
+        if (target == null)
+        {
+            return;
+        }
 
         IEnumerator MeleeAttackAnimation()
         {
