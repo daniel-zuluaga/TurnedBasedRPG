@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6037045676595089426}
   - component: {fileID: 4982322581880678383}
   m_Layer: 0
-  m_Name: Waterball
+  m_Name: DarkWaterball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de909d9705eea450cb73baf11dcb47b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
+  damage: 3
   heal: 0
   effectToApply: {fileID: 11400000, guid: 5678c3dbc0491476989469874900aa76, type: 2}
   moveSpeed: 5
