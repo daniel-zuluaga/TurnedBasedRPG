@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5791460634356825341
+--- !u!1001 &3299976612186545766
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12,9 +12,33 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
-      propertyPath: displayName
-      value: Mariana
+      propertyPath: curHp
+      value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: maxHp
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: displayName
+      value: Danna
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a8f73f10bc9e4e33a9484485e673474, type: 2}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3ae454f618bd54b5a8c2a1e04e5dd153, type: 2}
+    - target: {fileID: 2875448042572409669, guid: 77f076188aa8846e98f93df03d707861, type: 3}
+      propertyPath: combatActions.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d242165906034cde88251ba20464b66, type: 2}
     - target: {fileID: 2875448042572409688, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -66,26 +90,26 @@ PrefabInstance:
     - target: {fileID: 2875448044158869633, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 78ca43db30d83f548b74cbf3dfb1e8aa, type: 2}
+      objectReference: {fileID: 2100000, guid: d78ae75865bb57b4e84724e915e80669, type: 2}
     - target: {fileID: 2875448044158869635, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 78ca43db30d83f548b74cbf3dfb1e8aa, type: 2}
+      objectReference: {fileID: 2100000, guid: d78ae75865bb57b4e84724e915e80669, type: 2}
     - target: {fileID: 2875448044158869637, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 78ca43db30d83f548b74cbf3dfb1e8aa, type: 2}
+      objectReference: {fileID: 2100000, guid: d78ae75865bb57b4e84724e915e80669, type: 2}
     - target: {fileID: 2875448044158869639, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 78ca43db30d83f548b74cbf3dfb1e8aa, type: 2}
+      objectReference: {fileID: 2100000, guid: 0539cb79729d97f439f8eef69eeff41a, type: 2}
     - target: {fileID: 2875448044158869645, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 78ca43db30d83f548b74cbf3dfb1e8aa, type: 2}
+      objectReference: {fileID: 2100000, guid: d78ae75865bb57b4e84724e915e80669, type: 2}
     - target: {fileID: 2875448044158869647, guid: 77f076188aa8846e98f93df03d707861, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 78ca43db30d83f548b74cbf3dfb1e8aa, type: 2}
+      objectReference: {fileID: 2100000, guid: d78ae75865bb57b4e84724e915e80669, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f076188aa8846e98f93df03d707861, type: 3}
