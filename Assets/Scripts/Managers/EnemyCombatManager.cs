@@ -78,6 +78,12 @@ public class EnemyCombatManager : MonoBehaviour
 
     void CastCombatAction(CombatAction combatAction, Character target)
     {
+        if (curEnemy == null)
+        {
+            EndTurn();
+            return;
+        }
+
         curEnemy.CastCombatAction(combatAction, target);
         Invoke(nameof(EndTurn), Random.Range(minWaitTime, maxWaitTime));
 
