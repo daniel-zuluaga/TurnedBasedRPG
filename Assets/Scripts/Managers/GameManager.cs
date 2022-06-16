@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -77,4 +79,65 @@ public class GameManager : MonoBehaviour
         return obj.GetComponent<Character>();
 
     }
+
+    public void OnCharacterKilled(Character character)
+    {
+        allCharacters.Remove(character);
+
+        int playersRemaining = 0;
+        int EnemiesRemaining = 0;
+
+        for(int i = 0; i < allCharacters.Count; i++)
+        {
+            if (allCharacters[i].team == Character.Team.Player)
+                playersRemaining++;
+            else
+                EnemiesRemaining++;
+        }
+
+        if(EnemiesRemaining == 0)
+        {
+            PlayerTeamWins();
+        }
+        else if(playersRemaining == 0)
+        {
+            EnemyTeamWins();
+        }
+
+    }
+
+    void PlayerTeamWins()
+    {
+        UpdatePlayerPersistentData();
+        Invoke(nameof(LoadMapScene), 1.0f);
+
+    }
+
+    void EnemyTeamWins()
+    {
+        playerPersistentData.ResetCharacters();
+        Invoke(nameof(LoadMapScene), 1.0f);
+
+    }
+
+    void UpdatePlayerPersistentData()
+    {
+        for(int i = 0; i < playerTeam.Length; i++)
+        {
+            if(playerTeam[i] != null)
+            {
+                playerPersistentData.characters[i].health = playerTeam[i].curHp;
+            }
+            else
+            {
+                playerPersistentData.characters[i].isDead = true; 
+            }
+        }
+    }
+
+    void LoadMapScene()
+    {
+        SceneManager.LoadScene("Map");
+    }
+
 }

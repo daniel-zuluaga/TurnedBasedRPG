@@ -95,6 +95,7 @@ public class Character : MonoBehaviour
 
     void Die()
     {
+        GameManager.instance.OnCharacterKilled(this);
         Destroy(gameObject); 
     }
 
