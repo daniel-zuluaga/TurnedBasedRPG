@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public CharacterSet defaultEnemySet;
      
     public static GameManager instance;
+    public static CharacterSet curEnemySet;
+
 
     void Awake()
     {
@@ -35,7 +37,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        CreateCharacters(playerPersistentData, defaultEnemySet);
+
+        if (curEnemySet == null)
+            CreateCharacters(playerPersistentData, defaultEnemySet);
+        else
+            CreateCharacters(playerPersistentData, curEnemySet);
+
         TurnManager.instance.Begin();
     }
 
