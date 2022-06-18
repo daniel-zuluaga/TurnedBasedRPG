@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87b6ede6e24284fbb9c02bb59f2038da, type: 3}
-  m_Name: Player Presistent Data
+  m_Script: {fileID: 11500000, guid: f08c3e0392a744c5c93aba40109a297d, type: 3}
+  m_Name: Enemy0_Rock
   m_EditorClassIdentifier: 
-  characters:
-  - characterPrefab: {fileID: 2617976091854822300, guid: baab6ba343550432fbec08342615807a, type: 3}
-    health: 20
-    isDead: 0
+  displayName: Rock
+  description: Shoot Rock
+  projectilePrefab: {fileID: 4737365908084949217, guid: 3b729b07ca32a4aceb8dbe1f0d81a8c7, type: 3}

@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87b6ede6e24284fbb9c02bb59f2038da, type: 3}
-  m_Name: Player Presistent Data
+  m_Script: {fileID: 11500000, guid: d90bfda9ee8b94bf39fb2f0dca57ce81, type: 3}
+  m_Name: EnemyEncounter_0 9
   m_EditorClassIdentifier: 
   characters:
-  - characterPrefab: {fileID: 2617976091854822300, guid: baab6ba343550432fbec08342615807a, type: 3}
-    health: 20
-    isDead: 0
+  - {fileID: 8499063381457738295, guid: 1f7927e6f7d284486b6cbf292f7807e7, type: 3}
