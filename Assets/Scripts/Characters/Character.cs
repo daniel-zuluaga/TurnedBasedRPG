@@ -32,6 +32,8 @@ public class Character : MonoBehaviour
 
     private Vector3 standingPosition;
 
+    public static UnityAction<Character> onCharacterDeath;
+
     void OnEnable()
     {
         TurnManager.instance.onNewTurn += OnNewTurn;
@@ -95,7 +97,7 @@ public class Character : MonoBehaviour
 
     void Die()
     {
-        GameManager.instance.OnCharacterKilled(this);
+        onCharacterDeath.Invoke(this);
         Destroy(gameObject); 
     }
 

@@ -23,6 +23,17 @@ public class GameManager : MonoBehaviour
     public static CharacterSet curEnemySet;
 
 
+    void OnEnable()
+    { 
+        Character.onCharacterDeath += OnCharacterKilled;
+    }
+
+    void OnDisable()
+    {
+        Character.onCharacterDeath -= OnCharacterKilled;
+
+    }
+
     void Awake()
     {
         if(instance != null && instance != this)
@@ -87,7 +98,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void OnCharacterKilled(Character character)
+    void OnCharacterKilled(Character character)
     {
         allCharacters.Remove(character);
 
