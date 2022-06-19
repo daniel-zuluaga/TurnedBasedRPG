@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - characterPrefab: {fileID: 2617976091854822300, guid: baab6ba343550432fbec08342615807a, type: 3}
-    health: 20
+    health: 7
+    isDead: 0
+  - characterPrefab: {fileID: 7974408731254333176, guid: 9a90d21ef0559430fa68a4d56198bfd8, type: 3}
+    health: 25
+    isDead: 0
+  - characterPrefab: {fileID: 4579704643305600033, guid: 76aabfa239b3646abb0edb854d9a44d0, type: 3}
+    health: 30
     isDead: 0
