@@ -22,7 +22,7 @@ Heal (Helps heal his teammates who are his allies (Enemies) and adds 5 life to h
 DarkWaterBall (It is a ball of dark water that takes 3 life from the player and has a burning effect of 3 turns, a damage of 5 life to the player per turn)
 Rock(A ball of rock that deals 8 life damage to the player), Blow(It's a melee power that deals 8 life damage to the player)
 
-# video game type
+# Video game type
 
 It is a turn-based 3D combat RPG type game
 
