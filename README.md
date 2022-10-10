@@ -4,6 +4,9 @@
 
 Well, this game is about an RPG combat where the user is going to fight with the bots or enemy with artificial intelligence where there is going to be a great battle, the player is going to have different powers, not the same as the enemy, it is by turn where the user or player will have 3 characters and will fight with 3 enemies with different powers
 
+# Video of the Game
+https://www.youtube.com/watch?v=DbjEyc9H2_k
+
 # What did I do
 
 # Well, why did I make this video game?
