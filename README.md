@@ -4,6 +4,11 @@
 
 Well, this game is about an RPG combat where the user is going to fight with the bots or enemy with artificial intelligence where there is going to be a great battle, the player is going to have different powers, not the same as the enemy, it is by turn where the user or player will have 3 characters and will fight with 3 enemies with different powers
 
+<img width="962" alt="Captura de pantalla 2022-11-30 a la(s) 4 18 30 p m" src="https://user-images.githubusercontent.com/70453255/204910416-ba66b819-104f-411b-a9ce-771905dfd2b5.png">
+
+<img width="961" alt="Captura de pantalla 2022-11-30 a la(s) 4 18 49 p m" src="https://user-images.githubusercontent.com/70453255/204910514-aede1d31-7aaf-4390-83c1-1c2044d0d6b7.png">
+
+
 # Video of the Game
 https://www.youtube.com/watch?v=DbjEyc9H2_k
 
