@@ -37,4 +37,4 @@ It is a turn-based 3D combat RPG type game
 # Unity Versions
 
 The version of Unity that I am using is:
-UNITY 2021.1.0f1 Personal(Personal)
+UNITY 2021.3.13f1 Personal(Personal)
